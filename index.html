@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>DOM MANIPULATION</title>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" />
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body class="light-theme">
+        <nav>
+            <h1 class="logo">LOGO</h1>
+            <ul class="menu">
+                <li class="menulink"><a href="#">Home</a></li>
+                <li class="menulink"><a href="#">About</a></li>
+                <li class="menulink"><a href="#">Projects</a></li>
+                <li class="menulink"><a href="#">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+        <header>
+            <h1>DOM MANIPULATION</h1>
+            <p>Let's use some JavaScript to change this awesome web</p>
+            <div class="theme-switch">
+                <div class="to-dark-mode">
+                    <label for="" class="emoji">🌚</label>
+                    <label>Dark Mode</label>
+                </div>
+                <div class="to-light-mode hide-cont">
+                    <label for="" class="emoji">🌞</label>
+                    <label>Ligth Mode</label>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section>
+                <h2>Hover me to change the mood!</h2>
+                <div class="img-cont">
+                    <img src="img/happy_cat.jpg" alt="" />
+                </div>
+                <div class="btn-cont">
+                    <button class="btn-happy">Make me happy 😃</button>
+                    <button class="btn-sad">Make me sad 😢</button>
+                </div>
+            </section>
+            <div id="modalWindow">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Modal Window</h2>
+                    <p>
+                        This is a modal window. You can close it by clicking on the close button or
+                        outside the modal.
+                    </p>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem
+                        nulla quae reiciendis reprehenderit quam, consequuntur ea modi cum excepturi
+                        doloremque, quia magnam accusamus odit commodi debitis voluptatibus
+                        perferendis recusandae amet!
+                    </p>
+                    <button>Accept</button>
+                </div>
+            </div>
+            <button class="btn-modal">Open Modal</button>
+        </main>
+        <footer>
+            <p>
+                &copy; 2025 DOM MANIPULATION
+                <a href="mailto:adrian.cano@udit.es">adrian.cano@udit.es</a>
+            </p>
+        </footer>
+    </body>
+</html>
