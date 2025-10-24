@@ -31,3 +31,26 @@ btnSwitchMode.addEventListener("click", function(){
     to_light_mode.classList.toggle("hide-cont");
     to_dark_mode.classList.toggle("hide-cont");
 });
+
+// Lógica abrir/cerrar de la ventana modal
+
+let btnOpenModal = document.querySelector("#openModal");
+btnOpenModal.addEventListener("click", openModalWindow);
+
+// Función propia para abrir ventana modal
+
+function openModalWindow() {
+    let modalWindow = document.querySelector("#modalWindow");
+    modalWindow.classList.add("show-modal");
+}
+
+let btnCloseModal01 = document.querySelector(".close");
+btnCloseModal01.addEventListener("click", closeModalWindow);
+
+let btnCloseModal02 = document.querySelector(".btn-accept");
+btnCloseModal02.addEventListener("click", closeModalWindow);
+
+function closeModalWindow() {
+    let modalWindow = document.querySelector("#modalWindow");
+    modalWindow.classList.remove("show-modal");
+}
