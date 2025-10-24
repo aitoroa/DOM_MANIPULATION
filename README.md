@@ -39,3 +39,31 @@ burger.addEventListener("click", function(){
         isOpen= false;
     } 
 });
+
+## SEGUNDA VERSIÓN DEL MENÚ RESPONSIVE:
+
+// Lógica del menú
+
+// Selección de elementos de HTML
+let burger = document.querySelector(".burger > i");
+let menu_opt = document.querySelector(".menu");
+
+// Definimos evento click sobre el botón del menú
+burger.addEventListener("click", function(){
+    let isOpen = menu_opt.classList.contains("menu-show");
+    if (isOpen === false) {
+        menu_opt.classList.add("menu-show");
+        burger.classList.remove("fa-bars");
+        burger.classList.add("fa-times");
+    } else {
+        menu_opt.classList.remove("menu-show");
+        burger.classList.remove("fa-times");
+        burger.classList.add("fa-bars");
+    } 
+});
+
+## Función built-in toggle() de JS
+
+https://www.w3schools.com/howto/howto_js_toggle_class.asp
+
+Esta función me permite añadir o quitar una clase a un elemento de HTML. La propia función detecta si tiene o no tiene la clase y la añade o la quita.
