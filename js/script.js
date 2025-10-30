@@ -44,13 +44,23 @@ function openModalWindow() {
     modalWindow.classList.add("show-modal");
 }
 
-let btnCloseModal01 = document.querySelector(".close");
-btnCloseModal01.addEventListener("click", closeModalWindow);
+let btnCloseModal = document.querySelector("#modalWindow > .modal-content > .close");
+btnCloseModal.addEventListener("click", closeModalWindow);
 
-let btnCloseModal02 = document.querySelector(".btn-accept");
-btnCloseModal02.addEventListener("click", closeModalWindow);
+let btnCloseModalAccept = document.querySelector("#modalWindow > .modal-content > .btn-accept");
+btnCloseModalAccept.addEventListener("click", closeModalWindow);
 
 function closeModalWindow() {
     let modalWindow = document.querySelector("#modalWindow");
     modalWindow.classList.remove("show-modal");
 }
+
+// Cerrar ventana modal cuando se detecta un click fuera de esta
+
+window.addEventListener("click", function(event) {
+    // Llama solo a la función de cerrar modal siempre que el click no sea en la propia ventana modal.
+    let modal = document.querySelector("#modalWindow");
+    if (event.target == modal) {
+        closeModalWindow();
+    }
+});

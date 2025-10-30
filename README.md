@@ -67,3 +67,7 @@ burger.addEventListener("click", function(){
 https://www.w3schools.com/howto/howto_js_toggle_class.asp
 
 Esta función me permite añadir o quitar una clase a un elemento de HTML. La propia función detecta si tiene o no tiene la clase y la añade o la quita.
+
+## ADVERTENCIA:
+
+Cuando llamamos a una función como parámetro de un evento, se usa el nombre de la función sin los paréntesis.
