@@ -47,6 +47,8 @@ btnSad.addEventListener("click", function() {
     img.src = "img/sad_cat.jpg";
 });
 
+// Cambiar el fondo animado al hacer hover sobre la imagen
+
 // Lógica abrir/cerrar de la ventana modal
 
 let btnOpenModal = document.querySelector("#openModal");
