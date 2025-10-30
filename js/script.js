@@ -49,6 +49,32 @@ btnSad.addEventListener("click", function() {
 
 // Cambiar el fondo animado al hacer hover sobre la imagen
 
+let catImage = document.querySelector(".img-cont > img");
+let body = document.querySelector("body");
+let body_class = body.classList; 
+
+// Hover sobre la imagen
+
+catImage.addEventListener("mouseover", function() {
+    catImage.style.opacity = "0.5";
+    if (body_class.contains("dark-theme")) {
+        body.classList.add("nighttime-background-anim");
+    } else {
+        body.classList.add("daytime-background-anim");
+    }
+});
+
+// Hover fuera de la imagen (cursor sale de la imagen)
+
+catImage.addEventListener("mouseout", function() {
+    catImage.style.opacity = "1";
+    if (body_class.contains("dark-theme")) {
+        body.classList.remove("nighttime-background-anim");
+    } else {
+        body.classList.remove("daytime-background-anim");
+    }
+});
+
 // Lógica abrir/cerrar de la ventana modal
 
 let btnOpenModal = document.querySelector("#openModal");
